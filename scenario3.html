@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scenario-3</title>
+    <style></style>
+  </head>
+  <body>
+    <ul id="ul">
+      <li>Satyabrata Sahoo : - 753951</li>
+      <li>Mrinnal : - 794631</li>
+      <li>Jaydev : - 345684</li>
+      <li>Hyder : - 894326</li>
+      <li>Subham : - 827193</li>
+      <li>Narayan : - 829513</li>
+      <li>Harishankar : - 763149</li>
+      <li>Ramanuj : - 349761</li>
+      <li>Jayanth : - 596899</li>
+      <li>Siva : - 823376</li>
+    </ul>
+    <script>
+      var unorderedlist = document.getElementById("ul");
+      var listItem = unorderedlist.getElementsByTagName("li");
+      var newNums = []; 
+      for (var i = 0; i < listItem.length; i++) {
+        newNums.push(listItem[i].innerHTML); 
+        var no = newNums[i].toString();
+        if (no.search("5") != -1) {
+          document.getElementsByTagName("li")[i].setAttribute("id", no);
+          highlight(listItem[i].id, "#D9FBD9");
+        }
+      }
+      function highlight(name, color) {
+        var a = document.getElementById(name);
+        a.style.background = color; //background color
+        a.style.color = "green"; //foreground color
+        a.style.fontSize = "30px"; //increasing font size
+      }
+    </script>
+  </body>
+</html>

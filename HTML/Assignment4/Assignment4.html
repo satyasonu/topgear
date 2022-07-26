@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 4</title>
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <h1>Worldwide Market share of the browsers in</h1><br>
+      <h1>2020</h1> -->
+      <canvas id="canvas" width="1000" height="500" style="border: 1px solid #DCDCDC; margin-top:90px;">
+      </canvas>
+    </div>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "black";
+        ctx.font = "italic 15pt Calibri";
+
+        //browser names
+        ctx.fillText('others', 300, 85);
+        ctx.fillText('Opera', 300, 135);
+        ctx.fillText('Edge', 310, 185);
+        ctx.fillText('Samsung Internet', 210, 235);
+        ctx.fillText('Firefox', 295, 285);
+        ctx.fillText('Safari', 300, 335);
+        ctx.fillText('Chrome', 285, 385);
+        
+        //downside numbers
+        ctx.fillText('0', 445, 420);
+        ctx.fillText('10', 510, 420);
+        ctx.fillText('20', 575, 420);
+        ctx.fillText('30', 640, 420);
+        ctx.fillText('40', 710, 420);
+        ctx.fillText('50', 775, 420);
+        ctx.fillText('60', 840, 420);
+        ctx.fillText('70', 910, 420);
+
+        //numbers above bars
+        ctx.fillText('64', 910, 386);
+        ctx.fillText('19', 597, 335);
+        ctx.fillText('4', 500, 285);
+        ctx.fillText('4', 500, 235);
+        ctx.fillText('3', 490, 185);
+        ctx.fillText('2', 480, 135);
+        ctx.fillText('4', 500, 85);
+
+        //
+        ctx.beginPath();
+        ctx.moveTo(450, 60);
+        ctx.lineTo(450, 400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(520, 60);
+        ctx.lineTo(520,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(590, 60);
+        ctx.lineTo(590,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(660, 60);
+        ctx.lineTo(660,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(730, 60);
+        ctx.lineTo(730,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(800, 60);
+        ctx.lineTo(800,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(870, 60);
+        ctx.lineTo(870,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(940, 60);
+        ctx.lineTo(940,400);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.stroke();
+
+        //bars
+        //chrome
+        ctx.fillStyle = "#1589FF"
+        ctx.fillRect(450, 370, 450, 20);
+
+        //Safari
+        ctx.fillStyle = "#FF8300"
+        ctx.fillRect(450, 320, 137, 20);
+        
+        //Firefox
+        ctx.fillStyle = "#A9A9A9"
+        ctx.fillRect(450, 270, 40, 20);
+
+        //Samsung Internet
+        ctx.fillStyle = "#FFD700"
+        ctx.fillRect(450, 220, 40, 20);
+
+        //Edge
+        ctx.fillStyle = "#6495ED"
+        ctx.fillRect(450, 170, 30, 20);
+
+        //Opera
+        ctx.fillStyle = "#32CD30"
+        ctx.fillRect(450, 120, 20, 20);
+
+        //Others
+        ctx.fillStyle = "#483D8B"
+        ctx.fillRect(450, 70, 40, 20);
+
+        ctx.fillStyle = "#000";
+        ctx.font = "Italic 25pt Calibri";
+
+        ctx.font = "15pt Calibri";
+        ctx.fillText('Market Share in %age', 550, 480 );
+
+        ctx.font = "25pt Calibri";
+        ctx.fillText('Worldwide market share of the browsers in', 200, 25);
+        ctx.fillText('2020', 400, 52);
+        
+
+        ctx.translate(100, 250);
+        ctx.rotate((-90 * Math.PI) / 180);
+        ctx.fillText('Browsers', -50, 0);
+    </script>
+  </body>
+</html>

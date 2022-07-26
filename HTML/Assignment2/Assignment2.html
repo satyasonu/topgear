@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Assignment 2</title>
+    <link rel="stylesheet" href="./Assignment2.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>Internship Registration</h1><br/> 
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>:<input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Name"
+                    maxlength="40"
+                    minlength="2"
+                    pattern="[A-Za-z]{2,40}"
+                    title="Must be a length between 2 to 40. Only alphabets are allowed."
+                    required
+                  /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:<input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    minlength="8"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Min 8 charachter length. Must contain atlease 1 uppercase, 1 lower case, 1 number. No special charachters or space is alowed. "
+                    required
+                  /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:<input type="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></td>
+            </tr>
+            <tr>
+                <td>Graduation Year & Month</td>
+                <td>:<input type="month" name="month" min="2018-01" max="2019-12"></td>
+            </tr>
+            <tr><td>Proficiency Level: </td></tr>
+            <tr>
+                <td>HTML 5 : </td>
+                <td><input type="range" name="html5" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td>CSS : </td>
+                <td><input type="range" name="css" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td>JavaScript : </td>
+                <td><input type="range" name="javascript" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

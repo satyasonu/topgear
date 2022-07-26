@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(#23b4e0, #5fd5de, #17bac5);
+}
+.form{
+    /* border-style: dotted; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    height: 50vh;
+    margin: 170px 0 0 600px;
+    background: linear-gradient(#fdf8fa, #fbf5f8, rgba(234, 230, 230, 0.133));
+    border-radius: 1rem;
+}
+table{
+    padding-left: 0;
+    margin-left: 0;
+    justify-content: left;
+    text-align: left;
+    row-gap: 15px;
+}
+input{
+    border-color: aqua;
+}
+

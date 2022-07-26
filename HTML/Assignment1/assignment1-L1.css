@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: blueviolet;
+    height: 5vh;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    padding-top: 9px;
+    gap: 30px;
+}
+
+nav > li{
+    padding: 2rem;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+}
+nav > p{
+    color: #fff;
+    padding-top: 5px;
+    font-size: 30px;
+}
+nav > img{
+    padding: 0;
+    margin: 0;
+}
+header{
+    font-size: 25px;
+    padding: 20px;
+}
+article{
+    width: 75%;
+    float: left;
+    padding: 10px;
+    
+}
+aside{
+    width: 23%;
+    float: left;
+    border-left: dotted;
+    height: 80vh;
+    margin-top: 10px;
+    margin-bottom: 2vh;
+}
+.inside-aside{
+    margin-top: 10px;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+}
+.inside-aside > section > h4{
+    padding: 9px 9px 9px 9px;
+    background-color: rgb(223, 221, 221);
+}
+.inside-aside-section-ul{
+    list-style: none;
+}
+.inside-aside-section-ul > li{
+    padding: 10px;
+}
+.inside-aside > section > a{
+    cursor: pointer;
+    height: fit-content;
+    width: 1px;
+    display:inline-table;
+    padding: 10px;
+}
+.inside-aside > section > a:hover{
+    background-color: #000;
+    color: #fff;
+}
+footer{
+    height: 7vh;
+    float: left;
+    display: flex;
+    width: 99.9vw;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+footer > p{
+    padding: 15px;
+}
+footer > ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 20px 50px;
+}
+
+

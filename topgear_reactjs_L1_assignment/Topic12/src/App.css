@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display:flexbox;
+  flex-direction: row;
+  text-align: center;
+ 
+}
+
+.button{
+  
+  margin-right: auto;
+  margin-left: 42vw;
+  margin-top: 9vh;
+  padding-bottom: 10px;
+}
+
+
+.link{
+  border: 1px solid black;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.link > #back{
+  text-decoration: none;
+  background-color: aquamarine;
+  color: #000;
+  
+}
+.movieLists, .movie{
+  /* border-style: dotted; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.movieLists > table{
+  border-collapse: collapse;
+  margin: auto;
+}
+th , td{
+  border: 1px solid #000;
+}
+th{
+  background-color: cyan;
+}
+
+tr > td:nth-of-type(2), td:nth-of-type(8){
+  cursor: pointer;
+  color: blue;
+}
+.note{
+  position: absolute;
+  text-align: left;
+  margin-top: 70vh;
+  margin-left: 30vw;
+  color: red;
+}

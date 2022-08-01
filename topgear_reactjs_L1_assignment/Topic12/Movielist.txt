@@ -1,0 +1,27 @@
+{
+        movieId : "2022001",
+        movieName : "Jaadugar",
+        leadActor : "Jitu Sharma",
+        leadActree : "Arushi Sharma",
+        yearOfRelease : "2022",
+        language : "Hindi",
+        collections : "1.8 Cr"
+    },
+    {
+        movie : "2022002",
+        movieName : "Vikram",
+        leadActor : "Kamal Hasan",
+        leadActree : "NA",
+        yearOfRelease : "2022",
+        language : "Tamil",
+        collections : "445 Cr"
+    },
+    {
+        movie : "2022003",
+        movieName : "Charlie",
+        leadActor : "Dulquer Salman",
+        leadActree : "Teesa",
+        yearOfRelease : "2015",
+        language : "Malayalam",
+        collections : "42 Cr"
+    },

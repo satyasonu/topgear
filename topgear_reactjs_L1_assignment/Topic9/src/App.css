@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display:flexbox;
+  flex-direction: row;
+  text-align: center;
+ 
+}
+
+.button{
+  
+  margin-right: auto;
+  margin-left: 42vw;
+  margin-top: 9vh;
+  padding-bottom: 10px;
+}
+
+
+table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+td, th {
+  border: 3px solid #000;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th{
+  background-color: cyan;
+}
+.topic9{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px auto;
+  height: 30vh;
+  width: 30vw;
+  cursor: pointer;
+}
+.topic9 > p{
+  padding-top: 15vh;
+}
